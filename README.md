@@ -34,8 +34,8 @@ Framer/
 │   │   ├── FAQAccordion.tsx
 │   │   ├── Footer.tsx
 │   │   └── StructuredData.tsx
-│   ├── styles/              # Component styles
-│   │   ├── theme.css        # Theme tokens & global styles
+│   ├── styles/             
+│   │   ├── theme.css       
 │   │   ├── Header.css
 │   │   ├── Hero.css
 │   │   ├── Button.css
@@ -172,7 +172,7 @@ interface Page {
   slug: string;
   hero_heading: string;
   hero_subheading: string;
-  hero_image: string;          // CMS image URL
+  hero_image: string;          
   meta_title: string;
   meta_description: string;
   hide_from_nav: boolean;
@@ -184,9 +184,9 @@ interface Page {
 interface Feature {
   title: string;
   short_description: string;
-  icon_svg: string;             // SVG markup
-  image: string;                // CMS image URL
-  order: number;                // Display order
+  icon_svg: string;             
+  image: string;                
+  order: number;                
 }
 ```
 
@@ -196,9 +196,9 @@ interface Testimonial {
   name: string;
   role: string;
   quote: string;
-  avatar_image: string;         // CMS image URL
-  rating: number;               // 1-5
-  order: number;                // Display order
+  avatar_image: string;         
+  rating: number;              
+  order: number;                
 }
 ```
 
@@ -270,94 +270,94 @@ CSS custom properties defined in `src/styles/theme.css`:
 
 ## ♿ Accessibility Checklist
 
-- ✅ Semantic HTML structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- ✅ Single H1 in hero section
-- ✅ All buttons and links keyboard focusable
-- ✅ Visible focus states (`:focus-visible`)
-- ✅ ARIA labels on icon-only buttons
-- ✅ `lang="en"` on HTML element
-- ✅ Alt text on all images
-- ✅ Proper heading hierarchy
-- ✅ Keyboard navigation for carousel (Arrow Left/Right)
-- ✅ Accordion with `aria-expanded` attributes
-- ✅ Screen reader friendly navigation
+- Semantic HTML structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
+-  Single H1 in hero section
+-  All buttons and links keyboard focusable
+-  Visible focus states (`:focus-visible`)
+-  ARIA labels on icon-only buttons
+-  `lang="en"` on HTML element
+-  Alt text on all images
+-  Proper heading hierarchy
+-  Keyboard navigation for carousel (Arrow Left/Right)
+-  Accordion with `aria-expanded` attributes
+-  Screen reader friendly navigation
 
 ## 🧪 Responsive Testing Checklist
 
 Test at these viewport widths:
-- ✅ 375px (iPhone SE)
-- ✅ 480px (Mobile breakpoint)
-- ✅ 768px (Tablet)
-- ✅ 1024px (Desktop)
-- ✅ 1280px (Desktop)
-- ✅ 1600px (Ultrawide)
-- ✅ 1920px (Full HD)
+ 375px (iPhone SE)
+480px (Mobile breakpoint)
+768px (Tablet)
+- 1024px (Desktop)
+-  1280px (Desktop)
+-  1600px (Ultrawide)
+-  1920px (Full HD)
 
 ### Testing Points
-- ✅ No horizontal scroll at any width
-- ✅ Hero image scales fluidly
-- ✅ Headlines scale appropriately
-- ✅ CTAs remain accessible
-- ✅ Feature cards stack/grid correctly
-- ✅ Navigation adapts to mobile
-- ✅ Footer layout adjusts
-- ✅ All interactive elements remain usable
+-  No horizontal scroll at any width
+-  Hero image scales fluidly
+-  Headlines scale appropriately
+-  CTAs remain accessible
+-  Feature cards stack/grid correctly
+-  Navigation adapts to mobile
+-  Footer layout adjusts
+-  All interactive elements remain usable
 
 ## 🎯 Features Implemented
 
 ### Layout & Breakpoints
-- ✅ Four responsive breakpoints
-- ✅ No horizontal scroll
-- ✅ Fluid scaling of all elements
+-  Four responsive breakpoints
+-  No horizontal scroll
+-  Fluid scaling of all elements
 
 ### Semantic Structure
-- ✅ Correct HTML5 semantic elements
-- ✅ Single H1
-- ✅ Keyboard focusable elements
-- ✅ Visible focus states
-- ✅ ARIA labels
-- ✅ `lang="en"`
+-  Correct HTML5 semantic elements
+-  Single H1
+-  Keyboard focusable elements
+-  Visible focus states
+-  ARIA labels
+-  `lang="en"`
 
 ### UI Design & Interactions
-- ✅ Header with logo and navigation
-- ✅ Hero section with parallax
-- ✅ Feature cards (3-4 items)
-- ✅ Demo section with scroll anchor
-- ✅ Testimonials carousel with keyboard nav
-- ✅ Pricing section (3 plans)
-- ✅ FAQ accordion (5 items)
-- ✅ Footer with sitemap and social icons
-- ✅ Hover states on CTAs
-- ✅ Smooth scroll behavior
-- ✅ System font stack (Inter/system-ui/sans-serif)
+-  Header with logo and navigation
+-  Hero section with parallax
+-  Feature cards (3-4 items)
+-  Demo section with scroll anchor
+-  Testimonials carousel with keyboard nav
+-  Pricing section (3 plans)
+-  FAQ accordion (5 items)
+-  Footer with sitemap and social icons
+-  Hover states on CTAs
+-  Smooth scroll behavior
+-  System font stack (Inter/system-ui/sans-serif)
 
 ### SEO & Metadata
-- ✅ Page title and meta description
-- ✅ Canonical URL
-- ✅ Viewport tag
-- ✅ Robots meta
-- ✅ Open Graph tags
-- ✅ Twitter card tags
-- ✅ JSON-LD structured data
+-  Page title and meta description
+-  Canonical URL
+-  Viewport tag
+-  Robots meta
+-  Open Graph tags
+-  Twitter card tags
+-  JSON-LD structured data
 
 ### Images & Alt Text
-- ✅ CMS images for all visuals
-- ✅ Descriptive alt text
+-  CMS images for all visuals
+-  Descriptive alt text
 
 ### CMS Setup
-- ✅ Pages collection
-- ✅ Features collection
-- ✅ Testimonials collection
-- ✅ Plans collection
-- ✅ FAQ collection
-- ✅ Placeholder content
+-  Pages collection
+-  Features collection
+-  Testimonials collection
+-  Plans collection
+-  FAQ collection
+-  Placeholder content
 
 ### Component Architecture
-- ✅ Components in `components/` folder
-- ✅ Props-based components
-- ✅ Variant support
-- ✅ Consistent naming
-- ✅ Theme tokens exported
+-  Components in `components/` folder
+-  Props-based components
+-  Variant support
+-  Consistent naming
+-  Theme tokens exported
 
 ## 🛠️ Development
 
