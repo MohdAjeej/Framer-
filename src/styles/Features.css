@@ -1,0 +1,29 @@
+.features {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--bg);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 481px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1401px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
